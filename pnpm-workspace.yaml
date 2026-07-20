@@ -6,10 +6,13 @@ packages:
 catalogMode: prefer
 
 catalog:
-  "@types/node": ^24
-  typescript: ^5
-  vite: npm:@voidzero-dev/vite-plus-core@0.2.4
-  vite-plus: 0.2.4
+  "@types/node": ^26
+  "@vitest/browser-playwright": ^4
+  "@vitest/coverage-v8": ^4
+  typescript: ^7
+  vite: npm:@voidzero-dev/vite-plus-core@0.2.5
+  vite-plus: 0.2.5
+  vitest: ^4
 overrides:
   vite: "catalog:"
 peerDependencyRules:
@@ -17,3 +20,7 @@ peerDependencyRules:
     - vite
   allowedVersions:
     vite: "*"
+allowBuilds:
+  better-sqlite3: true
+  esbuild: true
+  msw: true
