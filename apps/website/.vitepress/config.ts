@@ -26,6 +26,14 @@ export default defineConfig({
             { text: "Quick Start", link: "/guide/quick-start" },
           ],
         },
+        {
+          text: "Advanced",
+          items: [
+            { text: "Interceptors", link: "/guide/interceptors" },
+            { text: "Streaming", link: "/guide/streaming" },
+            { text: "WebSockets", link: "/guide/websockets" },
+          ],
+        },
       ],
       "/packages/": [
         {
